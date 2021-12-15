@@ -1,0 +1,31 @@
+<div class="row">
+    {{#each pedido}}
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title d-flex justify-content-between aling-items-center">
+                       <h4>pedido</h4><a href="/pedido/edit/{{_id}}"><i class='bx bxs-edit'></i></a>
+                    </h1>
+                </div>
+                <div>
+                     <form action="/pedido/delete/{{_id}}?_method=delete" method="POST">
+                      <input type="hidden" name="_method" value="delete">
+                      <button class="btn btn-danger btn-block btn-sm" type="submit">
+                        Eliminar
+                      </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{else}}
+    <div class="col-md-3 mx-auto">
+        <div class="card">
+            <div class="card body">
+                <h1>Hola {{users.Nombre}}</h1>
+                <p class="lead">No hay pedidos aun, haga uno.</p>
+                <a href="/pedido/add" class="btn btn-success btn-block">Cree un pedido</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

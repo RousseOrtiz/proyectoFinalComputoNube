@@ -1,0 +1,60 @@
+{{#each errors}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{text}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/each}}
+<body>
+    <div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+        <h3>Nuevo Pedido</h3>
+    </div>
+    <div>
+      <form action="/pedido/nPedido" method="POST">        
+        <p>Elige el tipo de Café</p>
+        <p>1. Café en grano</p>
+        <p>2. Café Soluble</p>
+        <p>3. Café Molido</p>
+        <dev class="form">
+                <div class="form-group">
+                    <input type="text" name="tipocafe" class="form-control" placeholder="Ingrese el tipo de café"
+                    value="{{tipocafe}}">
+                </div>
+        </dev>
+
+        <div></div>
+        <p>Elige el Tipo de Tueste</p>
+        <p>1. Express Super(Tueste Oscuro)</p>
+        <p>2. Moro Super (Tueste Medio)</p>
+        <p>3. Mocca Super (Tueste Claro)</p>
+        <dev class="form">
+                <div class="form-group">
+                    <input type="text" name="tueste" class="form-control" placeholder="Ingrese el tipo de tueste"
+                    value="{{tueste}}">
+                </div>
+        </dev>
+
+        <p>Ingrese la cantidad de paquetes a pedir</p>
+        </div>
+        <dev class="form">
+                <div class="form-group">
+                    <input type="number" name="cantidadpaquetes" class="form-control" placeholder="Cantidad de Paquetes" min="1" max="100" 
+                    value="{{cantidadpaquetes}}">
+                </div>
+        </dev>
+
+        <p>Ingrese su dirección</p>
+        <div class="form-floating">
+            <textarea class="form-control" name="direccion"  placeholder="Dirección" id="Dir"
+            value="{{direccion}}"></textarea>
+             <label for="floatingTextarea">Dirección</label>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">
+                ENVIAR
+        </button>
+    </div>
+    </div>
+</body>

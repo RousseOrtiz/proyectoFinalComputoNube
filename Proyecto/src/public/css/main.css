@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+body{
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.navbar.logo{
+    width: 30%;
+}
+
+section{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.col-img{
+    background-image: url(../img/fundacion.png);
+    background-position: center;
+    background-size:cover;
+    min-height: 450px; 
+}
+.colum-img{
+    background-image: url(../img/express.png);
+    background-position: center;
+    background-size:cover;
+    min-height: 300px; 
+}
+.column-img{
+    background-image: url(../img/cf.png);
+    background-position: center;
+    background-size:cover;
+    min-height: 300px; 
+}
+.columna-img{
+    background-image: url(../img/images.png);
+    background-position: center;
+    background-size:cover;
+    min-height: 300px; 
+}

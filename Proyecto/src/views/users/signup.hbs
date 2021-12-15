@@ -1,0 +1,41 @@
+{{#each errors}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{text}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/each}}
+
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+        <h3>Registrate</h3>
+    </div>
+    <div>
+      <form action="/users/signup" method="POST">        
+        <div class="form-group">
+            <input type="text" name="Nombre" class="form-control" placeholder="Nombre" 
+            value="{{Nombre}}">
+        </div>
+        
+        <div class="form-group">
+            <input type="email" name="Email" class="form-control" placeholder="Email" value="{{Email}}">
+        </div>
+        </dev>
+        </div>
+        <div class="form-group">
+            <input type="password" name="contraseña" class="form-control" placeholder="Contraseña"
+             value="{{contraseña}}">
+        </div>
+        </dev>
+        <div class="form-group">
+            <input type="password" name="contraseña2" class="form-control" placeholder="Verifique Contraseña"
+            value="{{contraseña2}}">
+        </div>
+        </dev>
+           <button class="btn btn-primary btn-block" type="submit">
+                REGISTRAR
+            </button>
+        </div>
+        </dev>
+    </div>
+</div>
