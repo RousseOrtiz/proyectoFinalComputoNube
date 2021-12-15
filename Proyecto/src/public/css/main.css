@@ -37,3 +37,15 @@ section{
     background-size:cover;
     min-height: 300px; 
 }
+.col-img{
+    background-image: url(../img/empaque.png);
+    background-position: center;
+    background-size:cover;
+    min-height: 300px; 
+}
+.cl-img{
+    background-image: url(../img/histo.png);
+    background-position: center;
+    background-size:cover;
+    min-height: 300px; 
+}
